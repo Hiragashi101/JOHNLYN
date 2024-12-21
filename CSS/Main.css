@@ -1,0 +1,156 @@
+@font-face {
+    font-family: NavBold;
+    src: url(Text/BebasNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: MainReg;
+    src: url(Text/Akrobat-Regular.ttf);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+}  
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1; 
+ }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MainReg;
+}
+
+.bg {
+    background-image: url(Images/JOHNLYNBGFLIP.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    font-family: NavBold;
+    position: sticky;
+    top: 0;
+    padding: 2vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1vw 0.1vw;
+    background-color: white;
+    z-index: 10;
+}
+
+.navigation img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.navigation h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.navigation .links {
+    display: flex;
+    gap: 5vw;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #6699F7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bodypa {
+    text-align: center;
+}
+
+.bodypa h3 {
+    color: rgb(255, 255, 255);
+    font-family: NavBold;
+    font-size: 3vw;
+    padding-top: 6vw;
+    padding-left: 12vw;
+    position: absolute;
+    margin: 0%;
+    z-index: 2;
+    animation: fadeIn 1.9s;
+}
+
+.bodypa p {
+    color: rgb(255, 255, 255);
+    font-family: MainReg;
+    font-size: 1.5vw;
+    padding-top: 9.5vw;
+    padding-left: 12.3vw;
+    position: absolute;
+    margin: 0%;
+    z-index: 3;
+    animation: fadeIn 7.9s;
+}
+
+.bodypa img {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    float: left;
+    filter: brightness(30%);
+}
+
+.mainbox {
+    display: flex;
+    justify-content: center; 
+    gap: 2vw;
+    height: 8vw;
+    margin: 10vw;
+    margin-top: 24vw;
+    position: absolute;
+    z-index: 4;
+    animation: slideUp 2.9s;
+}
+
+.mainbox1 {
+    display: flex;
+    justify-content: center; 
+    gap: 2vw;
+    height: 8vw;
+    margin: 10vw;
+    margin-top: 35vw;
+    position: absolute;
+    z-index: 4;
+    animation: slideUp 3.5s;
+}
+
+
+/*HOVERS*/
